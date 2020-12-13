@@ -40,7 +40,7 @@ Users who are deamed as advance/performance runners will have the more intense a
 ## _Sprinkles_
 
 - User specific goals outside the app scope
-- Populated routes based on location
+- Populated routes based on location - Routes visually displayed
 - Full body workouts
 - Daily Journey 
 - Ability to check off runs 
@@ -61,7 +61,21 @@ Users who are deamed as advance/performance runners will have the more intense a
 - Statistics and reports about runs in relation to the users goals
 - Weight entry section with weekly weigh in checks 
 - Daily journaling
- 
+ <br>
+ <br>
 
+## Outline of the user interaction and experience for the application
 
+### Manual:
 
+Upon starting up the app the user is met with a welcome message and an authentication screen. Once the user creates an account or logs in they’re then met with  several input questions:
+1. What is your name?
+2. What is your goal? [ Weight loss, Get toned, Performance gains]
+3. What is your experience? [ Beginner, Intermediate, Advance]
+4. Are there any days you’re not free for a workout? 
+5. What time of the day best suits your workouts? [ Morning, Afternoon, Evening]
+
+### Beginner:
+- The main goal for the beginner program is to have them running 5km by the end of the 10 weeks.
+- The emphasis for the beginner is not to monitor daily/ weekly km but rather focus on completing daily exercises
+- Flexibility is a huge component here, with only 3 workouts scheduled per week
