@@ -65,8 +65,9 @@ Users who are deamed as advance/performance runners will have the more intense a
  <br>
 
 ## Outline of the user interaction and experience for the application
+<hr>
 
-### Manual:
+## Manual:
 
 Upon starting up the app the user is met with a welcome message and an authentication screen. Once the user creates an account or logs in they’re then met with  several input questions:
 1. What is your name?
@@ -74,8 +75,30 @@ Upon starting up the app the user is met with a welcome message and an authentic
 3. What is your experience? [ Beginner, Intermediate, Advance]
 4. Are there any days you’re not free for a workout? 
 5. What time of the day best suits your workouts? [ Morning, Afternoon, Evening]
+<br>
+<br>
 
-### Beginner:
+## Beginner:
 - The main goal for the beginner program is to have them running 5km by the end of the 10 weeks.
 - The emphasis for the beginner is not to monitor daily/ weekly km but rather focus on completing daily exercises
 - Flexibility is a huge component here, with only 3 workouts scheduled per week
+
+![Beginner Schedule](img/beginner-table.png)
+<br>
+<br>
+
+## Intermediate:
+- The main goal for an intermediate runner is to progressively get faster during runs as well as keeping in shape and getting toned
+- The recommended weekly km is 14 - 16 km + 1 interval type workout in between
+- tructure is a huge component here, this planner will schedule the running workouts around the individuals schedule. Set days and time is key within the group of runners.
+
+![Intermediate Schedule](img/intermediate-table.png)
+<br>
+<br>
+
+## Advance:
+- The main goal for these groups is improving their performance towards their desired goal.
+- The runners goal is scooped from the input question and the plan is then altered to fit their unique requirements
+- Recommended weekly km is anywhere from 20+ km and interval type workouts in between
+
+![Intermediate Schedule](img/advance-table.png)
