@@ -88,17 +88,29 @@ Upon starting up the app the user is met with a welcome message and an authentic
 <br>
 
 ## Intermediate:
-- The main goal for an intermediate runner is to progressively get faster during runs as well as keeping in shape and getting toned
+- The main goal for an intermediate runner is to progressively get faster during runs as well as keeping in shape.
 - The recommended weekly km is 14 - 16 km + 1 interval type workout in between
-- tructure is a huge component here, this planner will schedule the running workouts around the individuals schedule. Set days and time is key within the group of runners.
+- Structure is a huge component here, this planner will schedule the running workouts around the individuals schedule. Set days and time is key within the group of runners.
 
 ![Intermediate Schedule](img/intermediate-table.png)
 <br>
 <br>
 
 ## Advance:
-- The main goal for these groups is improving their performance towards their desired goal.
+- The main goal for this groups is improving their performance towards their desired goal.
 - The runners goal is scooped from the input question and the plan is then altered to fit their unique requirements
 - Recommended weekly km is anywhere from 20+ km and interval type workouts in between
 
 ![Intermediate Schedule](img/advance-table.png)
+<br>
+<br>
+
+## User interaction with each feature
+## Error handling
+
+<br>
+<br>
+
+## Control flow diagram
+
+![Control flow diagram](img/diagram.io.png)
