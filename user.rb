@@ -1,6 +1,6 @@
 class User
-    attr_reader :name, :goal, :experience, :days_off, :time_pref, :display_user_info
-    def initialize(name, goal, experience, days_off, time_pref, display_user_info )
+    attr_reader :name, :goal, :experience, :days_off, :time_pref, :display_user_info, :print_pref_time
+    def initialize(name, goal, experience, days_off, time_pref, display_user_info, print_pref_time )
         @name = name
         # @new_hash = Hash.new
         @user_info = Hash.new
@@ -11,7 +11,7 @@ class User
     end
 
     def user_name(name_str)
-        @name = name_str.to_
+        @name = name_str.to_s
         @user_info[:name] = @name
 
         @user_info.each do |key, value| 
@@ -35,6 +35,7 @@ class User
         @user_info[:goal] = @goal
     
         value = "goal"
+        system "clear"
         puts "##########################"
         puts "Your goal is #{@user_info[value.to_sym]}"
         puts "##########################"
@@ -57,6 +58,7 @@ class User
         @user_info[:experience] = @experience
     
         value = "experience"
+        system "clear"
         puts "#################################"
         puts "Your experience level is #{@user_info[value.to_sym]}"
         puts "#################################"
@@ -88,6 +90,7 @@ class User
         @user_info[:days_off] = @days_off
     
         value = "days_off"
+        system "clear"
         puts "#############################################"
         puts "You're unavailable to workout on #{@user_info[value.to_sym]}"
         puts "#############################################"
@@ -111,18 +114,23 @@ class User
         @user_info[:time_pref] = @time_pref
     
         value = "time_pref"
+        system "clear"
         puts "#############################################"
         puts "Your preferred time to workout is in the #{@user_info[value.to_sym]}"
         puts "#############################################"
 
-        puts @user_info
+        def display_user_info
+            @user_info.each do |key, value| 
+                puts "#{key} #{value}"
+            end
+        end
 
     end
 
     def display_user_info
 
         @user_info.each do |key, value| 
-            return "#{key} #{value}"
+            puts "#{key} #{value}"
         end
     end
 

@@ -7,95 +7,97 @@ def welcome_greeting
 end
 
 def new_user
-    user = User.new("test","test", "test", "test", "test", "test")
+    # user = User.new("test","test", "test", "test", "test", "test", "test")
 
-    adding = true
-    puts adding
-    while adding 
-        puts "What is your name?"
-        name = gets.chomp
-        if(name.length > 1)
-            puts "##########################"
-            puts "Welcome #{user.user_name(name)}"
-            puts "##########################"
-            puts " "
-            adding = false
-        else
-            puts "invalid name, try again"
-        end   
-    end
+    # adding = true
+    # while adding 
+    #     system "clear"
+    #     puts "What is your name?"
+    #     puts " "
+    #     name = gets.chomp
+    #     if(name.length > 0)
+    #         system "clear"
+    #         puts "##########################"
+    #         puts "Welcome #{user.user_name(name)}"
+    #         puts "##########################"
+    #         puts " "
+    #         adding = false
+    #     else
+    #         puts "invalid name, try again"
+    #     end   
+    # end
 
-    while adding == false
-        puts " "
-        puts "Whats is your goal?"
-        puts " "
-        case goal_question
-        when 1
-            puts = "#{user.goal_input(1)}"
-        when 2
-            puts = "#{user.goal_input(2)}"
+    # while adding == false
+    #     puts " "
+    #     puts "Whats is your goal?"
+    #     puts " "
+    #     case goal_question
+    #     when 1
+    #         puts = "#{user.goal_input(1)}"
+    #     when 2
+    #         puts = "#{user.goal_input(2)}"
 
-        when 3
-            puts = "#{user.goal_input(3)}"
-        end
-        # rescue 
-        #     puts "Invalid input, try again"
-        # end
-        adding = true 
-    end
+    #     when 3
+    #         puts = "#{user.goal_input(3)}"
+    #     end
+    #     # rescue 
+    #     #     puts "Invalid input, try again"
+    #     # end
+    #     adding = true 
+    # end
 
-    while adding == true
-        puts " "
-        puts "What is your experience?"
-        puts " "
-        case experience_input
-        when 1
-            puts = "#{user.experience(1)}"
-        when 2
-            puts = "#{user.experience(2)}"
-        when 3
-            puts = "#{user.experience(3)}"
-        end
-        adding = false
-    end
+    # while adding == true
+    #     puts " "
+    #     puts "What is your experience?"
+    #     puts " "
+    #     case experience_input
+    #     when 1
+    #         puts = "#{user.experience(1)}"
+    #     when 2
+    #         puts = "#{user.experience(2)}"
+    #     when 3
+    #         puts = "#{user.experience(3)}"
+    #     end
+    #     adding = false
+    # end
 
-    while adding == false
-        puts " "
-        puts "Are there any days you're unable to workout?"
-        puts " "
-        case days_off
-        when 1
-            puts = "#{user.days_off(1)}"
-        when 2
-            puts = "#{user.days_off(2)}"
-        when 3
-            puts = "#{user.days_off(3)}"
-        when 4
-            puts = "#{user.days_off(4)}"
-        when 5
-            puts = "#{user.days_off(5)}"
-        when 6
-            puts = "#{user.days_off(6)}"
-        when 7
-            puts = "#{user.days_off(7)}"
-        end
-        adding = true
-    end
+    # while adding == false
+    #     puts " "
+    #     puts "Are there any days you're unable to workout?"
+    #     puts " "
+    #     case days_off
+    #     when 1
+    #         puts = "#{user.days_off(1)}"
+    #     when 2
+    #         puts = "#{user.days_off(2)}"
+    #     when 3
+    #         puts = "#{user.days_off(3)}"
+    #     when 4
+    #         puts = "#{user.days_off(4)}"
+    #     when 5
+    #         puts = "#{user.days_off(5)}"
+    #     when 6
+    #         puts = "#{user.days_off(6)}"
+    #     when 7
+    #         puts = "#{user.days_off(7)}"
+    #     end
+    #     adding = true
+    # end
 
-    while adding == true
-        puts " "
-        puts "What time of the day best suits your workouts?"
-        puts " "
-        case time_pref
-        when 1
-            puts = "#{user.time_pref(1)}"
-        when 2
-            puts = "#{user.time_pref(2)}"
-        when 3
-            puts = "#{user.time_pref(3)}"
-        end
-        adding = false
-    end
+    # while adding == true
+    #     puts " "
+    #     puts "What time of the day best suits your workouts?"
+    #     puts " "
+    #     case time_pref
+    #     when 1
+    #         puts = "#{user.time_pref(1)}"
+    #     when 2
+    #         puts = "#{user.time_pref(2)}"
+    #     when 3
+    #         puts = "#{user.time_pref(3)}"
+    #     end
+    #     adding = false
+    # end
 end
 
 
@@ -114,7 +116,7 @@ def goal_question
     puts "Press 1) Weight loss" 
     puts "Press 2) Getting toned"
     puts "Press 3) Performance gains"
-    input = gets.chomp.to_i
+    input = gets.chomp
 end
 
 def experience_input
@@ -122,7 +124,7 @@ def experience_input
     puts "Press 1) Beginner" 
     puts "Press 2) Intermediate"
     puts "Press 3) Advance"
-    input = gets.chomp.to_i
+    return input = gets.chomp.to_i
 end
 
 def days_off
