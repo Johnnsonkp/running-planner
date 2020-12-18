@@ -1,14 +1,48 @@
 class User
-    attr_reader :name, :goal, :experience, :days_off, :time_pref, :display_user_info, :print_pref_time
-    def initialize(name, goal, experience, days_off, time_pref, display_user_info, print_pref_time )
+    require 'terminal-table'
+
+    attr_reader :name, :goal, :experience, :days_off, :time_pref, :display_user_info, :print_pref_time, :weight_loss_beginner
+
+    def initialize(name, goal, experience, days_off, time_pref, display_user_info, print_pref_time, weight_loss_beginner)
         @name = name
-        # @new_hash = Hash.new
         @user_info = Hash.new
         @goal = goal
         @experience = experience
         @days_off = days_off
         @time_pref = time_pref
+        @weight_loss_beginner = weight_loss_beginner
+        # @user_schedule = self.path_to_schedule || []
+        # @file_path = file_path
     end
+
+    # def weight_loss_beginner
+    #     # require 'terminal-table'
+
+    #     beginner_schedule_hash = {
+    #         :Monday    => " // Walk for 10 minutes (warm-up) // " " // Run for 1 minute, walk for 2 minutes (30 minutes) // " " // Cool down walk //",
+    #         :Tuesday   => " Rest",
+    #         :Wednesday => " // Walk for 10 minutes (warm-up) // " " // Run during chorus and walk during verse (30 minutes) // " " // Cool down walk // ",
+    #         :Thursday  => " Rest",
+    #         :Friday    => "// Walk for 10 minutes (warm-up) // " " // Light intensity run for 10 minutes // " " // Cool down walk (5 minutes) //",
+    #         :Saturday  => " Rest",
+    #         :Sunday    => " Rest"
+    #     }
+    #     # beginner_schedule_hash.each do |key, value |
+    #     #     #Creates running schedule based around users available days
+    #     #     if(display_user_info[:days_off]!= key.to_s)
+    #     #         rows = []
+    #     #         rows << ["#{value}"]
+    #     #         table = Terminal::Table.new :headings => ["#{key}"], :rows => rows
+    #     #         table.align_column(1, :center)
+    #     #         table.style = {:width => 180, :padding_left => 3, :border_x => "=", :border_i => "x"}
+    #     #         puts " "
+    #     #         return table
+    #     #     display = false   
+    #     #     end
+    #     # end
+    #     # intermittent
+    # end
+
 
     def user_name(name_str)
         @name = name_str.to_s
@@ -69,19 +103,19 @@ class User
 
         input = input.to_i
         if(input == 1)
-            off = "Mondays"
+            off = "Monday"
         elsif(input == 2)
-            off = "Tuesdays"
+            off = "Tuesday"
         elsif(input == 3)
-            off = "Wednesdays"
+            off = "Wednesday"
         elsif(input == 4)
-            off = "Thursdays"
+            off = "Thursday"
         elsif(input == 5)
-            off = "Fridays"
+            off = "Friday"
         elsif(input == 6)
-            off = "Saturdays"
+            off = "Saturday"
         elsif(input == 7)
-            off = "Sundays"
+            off = "Sunday"
         else
             puts "invalid input"
         end

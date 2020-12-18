@@ -1,8 +1,8 @@
-# T1A3 - Terminal Application
+# T1A3 - Terminal Runner
 
 ## _Describe at a high level what the application will do_
 
-This terminal application provides a 10 week running schedule based upon the users unique goal, availability and ability. The application also provides weekly reports and statistics centered around the users goal.
+Terminal Runner provides a week running schedule based upon the users unique goal, availability and ability. The application also provides weekly reports and statistics centered around the users goal.
 <br>
 <br>
 
@@ -26,11 +26,18 @@ Users who are deamed as advance/performance runners will have the more intense a
 <br>
 <br>
 
+## _Installation_
+- Ruby 2.7.2 required to run the application
+- gem 'rspec'
+- gem 'colorize', '~> 0.8.1'
+- gem 'terminal-table'
+
 ## _Features_
 
-- User authentification
+- User personalised greeting/ User statistics
 - Weekly running schedule planner based around the users ability and availability
 - Three difficulty levels (beginner, intermediate, hard)
+- Three goal modes (weight loss, getting toned, performance gains)
 - Input dection of users weight(optional entry for the user)
 - Charts and tables for user statistics
 - Weekly report 
@@ -69,7 +76,7 @@ Users who are deamed as advance/performance runners will have the more intense a
 
 ## Manual:
 
-Upon starting up the app the user is met with a welcome message and an authentication screen. Once the user creates an account or logs in they’re then met with  several input questions:
+Upon starting up the app the user is met with a welcome message. Once the user creates an account or logs in they’re then met with  several input questions:
 1. What is your name?
 2. What is your goal? [ Weight loss, Get toned, Performance gains]
 3. What is your experience? [ Beginner, Intermediate, Advance]
@@ -84,6 +91,7 @@ Upon starting up the app the user is met with a welcome message and an authentic
 - Flexibility is a huge component here, with only 3 workouts scheduled per week
 
 ![Beginner Schedule](img/beginner-table.png)
+![schedule view on the app Schedule](img/beginner-table.png)
 <br>
 <br>
 
