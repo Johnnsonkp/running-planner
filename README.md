@@ -1,12 +1,12 @@
 # T1A3 - Terminal Runner
 
-## _Describe at a high level what the application will do_
+## _Purpose of the application_
 
-Terminal Runner provides a week running schedule based upon the users unique goal, availability and ability. The application also provides weekly reports and statistics centered around the users goal.
+Terminal Runner provides a weekly running schedule based upon the users unique goal, availability and ability. The application also provides weekly reports and statistics centered around the users goal.
 <br>
 <br>
 
-## _Identify the problem it will solve and explain why you are developing it_
+## _Why terminal runner?_
 
 During the pandemic when gyms were shut down universally, people had to resort to other ways in order to keep fit. Running is the one full proof way to keep fit year round without paying a cent. All that is required is a good solid pair of runners and a large enough outdoor space or treadmill. 
 
@@ -14,9 +14,9 @@ Finding a time and a place to go for a run can be a headache, this app will take
 <br>
 <br>
 
-## _Identify the target audience and explain how a member of the target audience will use it_
+## _Target audience and application_
 
-The target audience for this application is users who are 16 and above. The app has several settings, which cater to the users age, experience and abilities. 
+The target audience for this application is users who are 16 and above. The app has several settings, which cater to the users experience and abilities. 
 
 An elderly lady for example in her late 60’s who lives a sedentary lifestyle will be classified as a beginner, (this is determined through a questionare which is taken by the user upon starting up the app).The app will then populate a schedule which incorporates medium to high intensity walks 3 - 4 days a week based on her availability.
 
@@ -25,6 +25,9 @@ Compared to an individual in he's early to mid 20's with an active lifestyle and
 Users who are deamed as advance/performance runners will have the more intense and long running training plans.
 <br>
 <br>
+
+## Github link
+[Terminal Runner Trello board](https://trello.com/b/FAijcuwF/plan-my-run-terminal-app)
 
 ## _Installation_
 - Ruby 2.7.2 required to run the application
@@ -36,7 +39,25 @@ Users who are deamed as advance/performance runners will have the more intense a
 
 - User personalised greeting/ User statistics
 - Weekly running schedule planner based around the users ability and availability
-- Three difficulty levels (beginner, intermediate, hard)
+- Three difficulty levels (beginner, intermediate, hard):
+    ### Beginner
+    -   The main goal for the beginner program is to have them running 5km by the end of the 10 weeks.
+    -   The emphasis for the beginner is not to monitor daily/ weekly km but rather focus on completing daily exercises
+    -   lexibility is a huge component here, with only 3 workouts scheduled per week
+
+    ### Intermediate
+    - The main goal for an intermediate runner is to progressively get faster during runs as well as keeping in shape and getting toned
+    - The recommended weekly km is 14 - 16 km + 1 interval type workout in between
+    - Structure is a huge component here, this planner will schedule the running workouts around the individuals schedule. Set days and time is key within the group of runners.
+
+    ### Advance
+    - The main goal for these groups is improving their performance towards their desired goal.
+    - The runners goal is scooped from the input question and the plan is then altered to fit their unique requirements
+    - Recommended weekly km is anywhere from 20+ km and interval type workouts in between
+
+
+
+
 - Three goal modes (weight loss, getting toned, performance gains)
 - Input dection of users weight(optional entry for the user)
 - Charts and tables for user statistics
@@ -90,8 +111,13 @@ Upon starting up the app the user is met with a welcome message. Once the user c
 - The emphasis for the beginner is not to monitor daily/ weekly km but rather focus on completing daily exercises
 - Flexibility is a huge component here, with only 3 workouts scheduled per week
 
-![Beginner Schedule](img/beginner-table.png)
-![schedule view on the app Schedule](img/beginner-table.png)
+![Beginner Schedule](docs/beginner-table.png)
+### Beginner schedule (Monday)
+![schedule view on the app Schedule](docs/beginner-schedule-monday.png)
+### Beginner schedule (Tuesday)
+![schedule view on the app Schedule](docs/beginner-schedule-tuesday.png)
+### Beginner schedule (Wednesday)
+![schedule view on the app Schedule](docs/beginner-schedule-wednesday.png)
 <br>
 <br>
 
@@ -100,20 +126,19 @@ Upon starting up the app the user is met with a welcome message. Once the user c
 - The recommended weekly km is 14 - 16 km + 1 interval type workout in between
 - Structure is a huge component here, this planner will schedule the running workouts around the individuals schedule. Set days and time is key within the group of runners.
 
-![Intermediate Schedule](img/intermediate-table.png)
+![Intermediate Schedule](docs/intermediate-table.png)
 <br>
 <br>
 
 ## Advance:
 - The main goal for this groups is improving their performance towards their desired goal.
-- The runners goal is scooped from the input question and the plan is then altered to fit their unique requirements
-- Recommended weekly km is anywhere from 20+ km and interval type workouts in between
+- The runner's goal is scooped from the input question and the plan is then altered to fit their unique requirements.
+- Recommended weekly km is anywhere from 20+ km and interval type workouts in between.
 
-![Intermediate Schedule](img/advance-table.png)
+![Intermediate Schedule](docs/advance-table.png)
 <br>
 <br>
 
-## User interaction with each feature
 ## Error handling
 
 <br>
@@ -121,4 +146,13 @@ Upon starting up the app the user is met with a welcome message. Once the user c
 
 ## Control flow diagram
 
-![Control flow diagram](img/diagram.io.png)
+![Control flow diagram](docs/diagram.io.png)
+<br>
+<br>
+
+## Implementation plan
+
+[Terminal Runner Trello board](https://trello.com/b/FAijcuwF/plan-my-run-terminal-app)
+
+![Trello Board](docs/trello-board.png)
+
