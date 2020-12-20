@@ -191,7 +191,7 @@ def print_schedule(arr1, arr2)
             rows << ["#{value}"]
             table = Terminal::Table.new :headings => ["#{key}", arr2], :rows => rows
             table.align_column(1, :center)
-            table.style = {:width => 180, :padding_left => 3, :border_x => "=", :border_i => "x"}
+            table.style = {:width => 150, :padding_left => 3, :border_x => "=", :border_i => "x"}
             puts " "
             puts table
             # print_schedule

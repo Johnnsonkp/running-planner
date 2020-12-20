@@ -124,11 +124,13 @@ while true
             if(user_hash[:goal] == "Weight loss")
                 print_schedule(weight_loss_beginner_hash, user_hash[:time_pref])
             end
-        elsif(user_hash[:experience] == "Intermediate")
+        end
+        if(user_hash[:experience] == "Intermediate")
             if(user_hash[:goal] == "Getting toned")
                 print_schedule(toned_intermediate_hash, user_hash[:time_pref])
             end
-        elsif(user_hash[:experience] == "Advance")
+        end
+        if(user_hash[:experience] == "Advance")
             if(user_hash[:goal] == "Performance gains")
                 print_schedule(performance_gain_advance, user_hash[:time_pref])
             end

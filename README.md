@@ -143,11 +143,6 @@ Upon starting up the app the user is met with a welcome message. Once the user c
 <br>
 <br>
 
-## Error handling
-
-<br>
-<br>
-
 ## Control flow diagram
 
 ![Control flow diagram](docs/diagram.io.png)
@@ -159,7 +154,7 @@ Upon starting up the app the user is met with a welcome message. Once the user c
 [Terminal Runner Trello board](https://trello.com/b/FAijcuwF/plan-my-run-terminal-app)
 
 ![Trello Board](docs/13:12.png)
-![Trello Board](docs/15:12.png)
+![Trello Board](docs/15:12.pngar)
 
 ![Trello Board](docs/trello-board.png)
 
